@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="text/css"
+      href="{% static 'static_page/css/style.css' %}"
+      rel="stylesheet"
+    />
+    <title>about me</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="geolacation">
+        <img src="{% static 'static_page/img/place.png' %}" />
+        <a
+          href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.622504%2C55.753215&z=10"
+          target="_blank"
+        >
+          Москва
+        </a>
+      </div>
+      <div class="phone">
+        <img src="{% static 'static_page/img/telegram.png' %}" />
+        <div><a href="http://t.me/vanger_2006" target="_blank">Телеграм @vanger_2006</a></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="block1">
+        <p>
+          Всем здравствуйте! Меня зовут Иван, я начинающий веб-разработчик. В
+          IT-сферу меня, как ни странно, привели шахматы. В детстве я мечтал
+          стать гроссмейстером и прилагал для этого все усилия : ходил в
+          шахматную секцию, читал сложные шахматные книжки, учил дебюты,
+          участвовал в турнирах. Но один день перевернул все. Я узнал о
+          существовании AlphaZero – нейросети, сумевшей обыграть лучший
+          шахматный движок. И тут началось… Чем больше я читал о нейросетях ,
+          тем больше убеждался в безграничности возможностей современных
+          технологий. Совершенно случайно я также узнал о безграничности зарплат
+          IT-специалистов. Титул чемпиона мира перестал казаться таким уж
+          заманчивым :) Был август, а значит и набор в Лицей Академии Яндекса. Я
+          решил попытать счастья, благо в математике я весьма сведущ, прошел
+          вступительное испытание и собеседование. Меня приняли - радости не
+          было предела! На протяжении двух лет я учился программировать на
+          Python, пробовал себя в разных проектах. Например, в 2021 году я
+          написал программу по аппроксимации графиков по просьбе сотрудника
+          одного из научных институтов РАН. Но больше всего меня заинтересовала
+          именно веб-разработка, и теперь я стараюсь развиваться в этой области.
+        </p>
+        <img
+          class="first_pic"
+          src="{% static 'static_page/img/me (2).png' %}"
+          alt="фото меня"
+        />
+      </div>
+      <div class="block2">
+        <h1>Мои увлечения</h1>
+        <div class="container">
+          <img
+            class="second_pic"
+            src="{% static 'static_page/img/chess.png' %}"
+            alt="я и шахматы"
+          />
+          <p>
+            Играть в шахматы я не бросил. Продолжаю тренироваться, участвую в
+            турнирах. Можем сыграть вместе на
+            <a href="https://lichess.org/" target="_blank">личесс</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="block3">
+        <img
+          class="drums_pic"
+          src="{% static 'static_page/img/drums.jpg' %}"
+          alt="я и барабаны"
+        />
+        <p>
+          Еще одна моя страсть - музыка! Я умею играть на балалайке, гитаре и
+          барабанах. Просто душа компании. Даже выступал в пабе, смотрите.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="end_block">
+        <h1>Мои проекты</h1>
+        <div class="projects">
+          <a href="https://github.com/vanger2607/approximation" target="_blank">
+            Проект по аппроксимации графиков для "Фниц РАН"</a
+          >
+          <a href="https://github.com/vanger2607/KSIGMA" target="_blank"
+            >КСИГМА</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
